@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/createCardFragment">
+
+    <fragment
+        android:id="@+id/createCardFragment"
+        android:name="com.team4.cardcase2.foreground.CreateCardFragment"
+        android:label="fragment_create_card"
+        tools:layout="@layout/fragment_create_card" >
+        <action
+            android:id="@+id/action_createCardFragment_to_createNewFragment"
+            app:destination="@id/createNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewFragment"
+        android:name="com.team4.cardcase2.foreground.CreateNewFragment"
+        android:label="fragment_create_new"
+        tools:layout="@layout/fragment_create_new" />
+</navigation>
