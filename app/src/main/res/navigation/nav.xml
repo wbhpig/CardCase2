@@ -18,5 +18,9 @@
         android:id="@+id/createNewFragment"
         android:name="com.team4.cardcase2.foreground.CreateNewFragment"
         android:label="fragment_create_new"
-        tools:layout="@layout/fragment_create_new" />
+        tools:layout="@layout/fragment_create_new" >
+        <action
+            android:id="@+id/action_createNewFragment_to_createCardFragment"
+            app:destination="@id/createCardFragment" />
+    </fragment>
 </navigation>
