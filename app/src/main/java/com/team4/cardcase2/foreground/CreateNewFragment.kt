@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.team4.cardcase2.R
 
 private const val ARG_PARAM1 = "param1"
@@ -40,6 +41,7 @@ class CreateNewFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val root = inflater.inflate(R.layout.fragment_create_new, container, false)
+        val saveButton: Button = root.findViewById(R.id.saveButton)
         val inputFirstName: EditText = root.findViewById(R.id.inputFirstName)
         val inputSecondName: EditText = root.findViewById(R.id.inputSecondName)
         val showName: TextView = root.findViewById(R.id.showName)
@@ -49,6 +51,11 @@ class CreateNewFragment : Fragment() {
         val showEmail: TextView = root.findViewById(R.id.showEmail)
         val inputPhone: EditText = root.findViewById(R.id.inputPhone)
         val inputEmail: EditText = root.findViewById(R.id.inputEmail)
+
+        saveButton.setOnClickListener{
+            val navController=findNavController()
+            navController.navigate(R.id.createCardFragment)
+        }
 
         inputFirstName.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
