@@ -11,9 +11,12 @@ import com.team4.cardcase2.R
 class MainActivity : AppCompatActivity() {
 
     private val fragmentList= mutableListOf<Fragment>(
-        WalletFragment()
+        WalletFragment(),
+        GroupFragment(),
+        WrenchFragment(),
+        SettingsFragment()
     )
-    private val titleList= mutableListOf<String>("Wallet")
+    private val titleList= mutableListOf<String>("Wallet", "Group", "Wrench", "Settings")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
