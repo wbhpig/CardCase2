@@ -1,50 +1,61 @@
 package com.team4.cardcase2.entity;
 
 public class Card {
-    private int id;
-    private String email;
-    private String pwd;
-    private String vcode;
-    private int usertype;
+    private int card_id;
+    private String element_type;
+    private String content;
+    private int position_x;
+    private int position_y;
+    private String style;
 
-    public int getId() {
-        return id;
+    public int getCard_id() {
+        return card_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCard_id(int card_id) {
+        this.card_id = card_id;
     }
 
-    public String getEmail() {
-        return email;
+    public String getElement_type() {
+        return element_type;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setElement_type(String element_type) {
+        this.element_type = element_type;
     }
 
-    public String getPwd() {
-        return pwd;
+    public String getContent() {
+        return content;
     }
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public String getVcode() {
-        return vcode;
+    public int getPosition_x() {
+        return position_x;
     }
 
-    public void setVcode(String vcode) {
-        this.vcode = vcode;
+    public void setPosition_x(int position_x) {
+        this.position_x = position_x;
     }
 
-    public int getUsertype() {
-        return usertype;
+    public int getPosition_y() {
+        return position_y;
     }
 
-    public void setUsertype(int usertype) {
-        this.usertype = usertype;
+    public void setPosition_y(int position_y) {
+        this.position_y = position_y;
     }
 
+    public String getStyle() {
+        return style;
+    }
+
+    public void setStyle(String style) {
+        this.style = style;
+    }
+
+    public Card() {
+    }
 }
