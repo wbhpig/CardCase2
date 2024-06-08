@@ -123,6 +123,7 @@ public class CardDao {
     public Card getCardById(int cid){
         Connection conn = null;
         PreparedStatement stmt2 = null;
+
         ResultSet rs2 = null;
         Card card = new Card();
         try {
