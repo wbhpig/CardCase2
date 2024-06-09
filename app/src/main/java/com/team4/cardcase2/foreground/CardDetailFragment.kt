@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.team4.cardcase2.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -35,7 +36,18 @@ class CardDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_card_detail, container, false)
+        val root = inflater.inflate(R.layout.fragment_card_detail, container, false)
+
+        val showName: TextView = root.findViewById(R.id.showName)
+        val showName2: TextView = root.findViewById(R.id.showName2)
+        val showCompany: TextView = root.findViewById(R.id.showCompany)
+        val showPhone: TextView = root.findViewById(R.id.showPhone)
+        val showPhone2: TextView = root.findViewById(R.id.showPhone2)
+        val showEmail: TextView = root.findViewById(R.id.showEmail)
+        val showEmail2: TextView = root.findViewById(R.id.showEmail2)
+        val showAddress2: TextView = root.findViewById(R.id.showAddress2)
+
+        return root
     }
 
     companion object {
