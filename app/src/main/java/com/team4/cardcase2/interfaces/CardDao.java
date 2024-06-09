@@ -119,6 +119,7 @@ public class CardDao {
     }
     public List<Card> getCardByType(int type){
 
+        return null;
     }
     public Card getCardById(int cid){
         Connection conn = null;

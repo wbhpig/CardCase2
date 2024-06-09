@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_createNewFragment_to_createCardFragment"
             app:destination="@id/createCardFragment" />
+        <action
+            android:id="@+id/action_createNewFragment_to_blankFragment"
+            app:destination="@id/blankFragment" />
     </fragment>
     <fragment
         android:id="@+id/blankFragment"
