@@ -1,12 +1,18 @@
 package com.team4.cardcase2.foreground
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import com.team4.cardcase2.R
+import com.team4.cardcase2.entity.Encoder
+import com.team4.cardcase2.entity.QRCodeGenerator
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,12 +37,14 @@ class CardDetailFragment : Fragment() {
         }
     }
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         val root = inflater.inflate(R.layout.fragment_card_detail, container, false)
+        val id: Int = 1
 
         val showName: TextView = root.findViewById(R.id.showName)
         val showName2: TextView = root.findViewById(R.id.showName2)
@@ -46,6 +54,21 @@ class CardDetailFragment : Fragment() {
         val showEmail: TextView = root.findViewById(R.id.showEmail)
         val showEmail2: TextView = root.findViewById(R.id.showEmail2)
         val showAddress2: TextView = root.findViewById(R.id.showAddress2)
+        val qrCodeGenerator = QRCodeGenerator()
+
+        val qrView: ImageView = root.findViewById(R.id.qrView)
+        val qrButton: Button = root.findViewById(R.id.qrButton)
+        val encoder = Encoder()
+        qrButton.setOnClickListener {
+            val bitmap = qrCodeGenerator.generateQRCode(encoder.encode(id), 300, 300)
+            qrView.setImageBitmap(bitmap)
+        }
+
+        val backButton: TextView = root.findViewById(R.id.backButton)
+        backButton.setOnClickListener {
+            val navController = findNavController()
+            navController.navigate(R.id.blankFragment)
+        }
 
         return root
     }

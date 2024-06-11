@@ -7,6 +7,8 @@ import com.google.gson.JsonObject
 import com.google.gson.reflect.TypeToken
 
 data class ServerCard(
+    val cardId: Int = 0,
+    val success: Boolean = false,
     val userId: Int,
     val elements: List<Elements>,
     val avatar: String, // Base64字符串
@@ -99,4 +101,6 @@ data class Design(
     val color: String,
     val font: String,
     val layout: String
-)
+){
+    constructor() : this("", "", "", "")
+}

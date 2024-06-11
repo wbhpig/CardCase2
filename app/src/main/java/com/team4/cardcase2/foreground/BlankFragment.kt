@@ -2,15 +2,18 @@ package com.team4.cardcase2.foreground
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.team4.cardcase2.R
+import com.team4.cardcase2.entity.Encoder
 import com.team4.cardcase2.entity.ServerCard
 import com.team4.cardcase2.interfaces.test
 
@@ -24,7 +27,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [BlankFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class BlankFragment : Fragment() {
+class BlankFragment : Fragment(), ScanFragment.QRCodeScanResultListener{
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -49,14 +52,48 @@ class BlankFragment : Fragment() {
             val navController=findNavController()
             navController.navigate(R.id.createCardFragment)
         }
-
+//        val recyclerView: RecyclerView =root.findViewById(R.id.groupView)
+//        val groupLists = getGids(1)
+//        val adapter = GroupAdapter(groupLists)
+//        recyclerView.adapter = adapter
+//        recyclerView.layoutManager = LinearLayoutManager(requireContext())
         val myCardView:RecyclerView = root.findViewById(R.id.myCardView)
         val myCards:List<ServerCard> = test.getMyCard()
         val adapter = CardAdapter(myCards)
         myCardView.adapter = adapter
         myCardView.layoutManager = LinearLayoutManager(requireContext())
+
+        val testButton: Button = root.findViewById(R.id.testButton)
+        testButton.setOnClickListener {
+            val navController=findNavController()
+            navController.navigate(R.id.cardDetailFragment)
+        }
+
+        val scanButton: Button = root.findViewById(R.id.scanButton2)
+        scanButton.setOnClickListener {
+            // 启动QRCodeScannerFragment
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.blankFragment, ScanFragment())
+                .addToBackStack(null)
+                .commit()
+        }
         return root
     }
+
+    override fun onQRCodeScanned(result: String) {
+        println("---------------")
+        println(result)
+        // 使用扫描结果
+        val coder: Encoder = Encoder()
+        val qrResult = coder.decode(result)
+        Log.d("ButtonFragment", "Decoded QR Code Result: $qrResult")
+
+        Toast.makeText(context, "QR Code Result: $qrResult", Toast.LENGTH_LONG).show()
+        // 返回到ButtonFragment
+        parentFragmentManager.popBackStack()
+    }
+
+
 
     companion object {
         /**
@@ -77,4 +114,5 @@ class BlankFragment : Fragment() {
                 }
             }
     }
+
 }

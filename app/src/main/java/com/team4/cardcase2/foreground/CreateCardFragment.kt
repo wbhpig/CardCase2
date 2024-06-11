@@ -9,7 +9,11 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.team4.cardcase2.R
+import com.team4.cardcase2.entity.ServerCard
+import com.team4.cardcase2.interfaces.test
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -46,6 +50,12 @@ class CreateCardFragment : Fragment() {
             val navController = findNavController()
             navController.navigate(R.id.createNewFragment)
         }
+
+        val myCardView: RecyclerView = root.findViewById(R.id.myCardView)
+        val myCards:List<ServerCard> = test.getMyCard()
+        val adapter = CardAdapter(myCards)
+        myCardView.adapter = adapter
+        myCardView.layoutManager = LinearLayoutManager(requireContext())
 
         val backButton: TextView = root.findViewById(R.id.backButton2)
         backButton.setOnClickListener {

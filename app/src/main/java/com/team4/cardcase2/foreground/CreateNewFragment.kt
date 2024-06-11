@@ -140,7 +140,7 @@ class CreateNewFragment : Fragment() {
             val avatar = ""
             val background = ""
             val design = Design("", "", "", "")
-            val serverCard = ServerCard(userId, elements, avatar, background, design)
+            val serverCard = ServerCard(0, false, userId, elements, avatar, background, design)
 
             val authToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjE5NzIzNTY5NThAcXEuY29tIiwiZXhwIjoxNzE4NTIwMjQyfQ.mXJxuhtmxTx3_yvKv1MOgnGEccK7h_f21ugT-bvuViI"
             val jsonBody = serverCard.toJson()
