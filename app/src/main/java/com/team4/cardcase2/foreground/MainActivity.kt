@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         WalletFragment(),
         GroupFragment(),
         WrenchFragment(),
-        SettingsFragment()
+        NavFragment()
     )
     private val titleList= mutableListOf<String>("Wallet", "Group", "Wrench", "Settings")
 
