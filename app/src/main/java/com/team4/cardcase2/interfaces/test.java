@@ -602,7 +602,7 @@ public class test {
                 "    \"elements\": [\n" +
                 "        {\n" +
                 "            \"type\": \"name\",\n" +
-                "            \"content\": \"Li Tiansuo\",\n" +
+                "            \"content\": \"Kobe Bryant\",\n" +
                 "            \"position\": {\n" +
                 "                \"x\": 50,\n" +
                 "                \"y\": 10\n" +
@@ -634,7 +634,7 @@ public class test {
                 "        },\n" +
                 "        {\n" +
                 "            \"type\": \"company\",\n" +
-                "            \"content\": \"Company\",\n" +
+                "            \"content\": \"Lakers\",\n" +
                 "            \"position\": {\n" +
                 "                \"x\": 50,\n" +
                 "                \"y\": 50\n" +

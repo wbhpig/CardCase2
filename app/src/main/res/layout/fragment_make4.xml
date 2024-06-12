@@ -16,7 +16,7 @@
             android:layout_width="351dp"
             android:layout_height="64dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="124dp"
+            android:layout_marginTop="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -89,7 +89,7 @@
             android:layout_width="151dp"
             android:layout_height="151dp"
             android:layout_marginStart="130dp"
-            android:layout_marginTop="217dp"
+            android:layout_marginTop="137dp"
             android:src="@drawable/confirm_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -99,12 +99,12 @@
             android:layout_width="221dp"
             android:layout_height="64dp"
             android:layout_marginStart="95dp"
-            android:layout_marginTop="404dp"
-            android:text="Your Products Are On The Way"
+            android:layout_marginTop="324dp"
             android:gravity="center"
-            android:textStyle="bold"
+            android:text="Your Products Are On The Way"
             android:textColor="#212529"
             android:textSize="22sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -113,10 +113,10 @@
             android:layout_width="281dp"
             android:layout_height="66dp"
             android:layout_marginStart="65dp"
-            android:layout_marginTop="482dp"
+            android:layout_marginTop="402dp"
+            android:gravity="center"
             android:text="Thank you for shopping. Your order has been successfully placed and has been processed for delivery"
             android:textColor="#615D5D"
-            android:gravity="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -125,7 +125,7 @@
             android:layout_width="121dp"
             android:layout_height="18dp"
             android:layout_marginStart="145dp"
-            android:layout_marginTop="667dp"
+            android:layout_marginTop="557dp"
             android:fontFamily="sans-serif-thin"
             android:gravity="center"
             android:text="Continue Making"

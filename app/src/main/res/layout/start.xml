@@ -16,7 +16,6 @@
             android:layout_alignParentLeft="true">
 
 
-
             <ImageView
                 android:layout_width="226dp"
                 android:layout_height="61dp"
@@ -41,8 +40,8 @@
             android:id="@+id/phone"
             android:layout_width="380dp"
             android:layout_height="320dp"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/head"
+            android:layout_centerHorizontal="true"
             android:contentDescription="@string/phone"
             android:src="@drawable/startphone" />
 
@@ -51,11 +50,10 @@
             android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/phone"
-            android:textSize="18sp"
-            android:textColor="#7C7C7C"
             android:layout_centerHorizontal="true"
             android:text="Welcome to CardCase!  Effortlessly manage your electronic business cards, keeping your information always up-to-date!!"
-            />
+            android:textColor="#7C7C7C"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/signUpButton"

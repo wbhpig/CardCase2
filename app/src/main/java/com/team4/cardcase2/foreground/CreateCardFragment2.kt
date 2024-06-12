@@ -7,12 +7,14 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavGraph
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.team4.cardcase2.R
 import com.team4.cardcase2.entity.ServerCard
 import com.team4.cardcase2.interfaces.test
+
 
 /**
  * A simple [Fragment] subclass.
@@ -44,6 +46,9 @@ class CreateCardFragment2 : Fragment() {
         val startButton: Button = root.findViewById(R.id.button_create_new)
         startButton.setOnClickListener {
             val navController = findNavController()
+            val navInflater = navController.navInflater
+            val navGraph:NavGraph = navInflater.inflate(R.navigation.nav)
+            navGraph.setStartDestination(R.layout.fragment_blank2)
             navController.navigate(R.id.createNewFragment)
         }
 

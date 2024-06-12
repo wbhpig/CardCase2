@@ -94,11 +94,9 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:background="@drawable/rounded_edittext"
-                android:inputType="number"
-                android:textColorHint="#A0A0A0"
-                android:cursorVisible="false"
+                android:gravity="center"
                 android:hint="0"
-                android:gravity="center"/>
+                android:textColorHint="#A0A0A0" />
 
             <EditText
                 android:id="@+id/verify2"
@@ -106,23 +104,18 @@
                 android:layout_height="70dp"
                 android:layout_marginLeft="12dp"
                 android:background="@drawable/rounded_edittext"
-                android:inputType="number"
-                android:textColorHint="#A0A0A0"
-                android:cursorVisible="false"
+                android:gravity="center"
                 android:hint="0"
-                android:gravity="center"/>
-
+                android:textColorHint="#A0A0A0" />
             <EditText
                 android:id="@+id/verify3"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="12dp"
                 android:background="@drawable/rounded_edittext"
-                android:inputType="number"
-                android:textColorHint="#A0A0A0"
-                android:cursorVisible="false"
+                android:gravity="center"
                 android:hint="0"
-                android:gravity="center"/>
+                android:textColorHint="#A0A0A0" />
 
             <EditText
                 android:id="@+id/verify4"
@@ -130,11 +123,9 @@
                 android:layout_height="70dp"
                 android:layout_marginLeft="12dp"
                 android:background="@drawable/rounded_edittext"
-                android:inputType="number"
-                android:textColorHint="#A0A0A0"
-                android:cursorVisible="false"
+                android:gravity="center"
                 android:hint="0"
-                android:gravity="center"/>
+                android:textColorHint="#A0A0A0" />
 
 
         </LinearLayout>
