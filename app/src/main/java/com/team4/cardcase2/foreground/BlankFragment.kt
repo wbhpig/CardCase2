@@ -58,13 +58,16 @@ class BlankFragment : Fragment(), ScanFragment.QRCodeScanResultListener{
 //        recyclerView.adapter = adapter
 //        recyclerView.layoutManager = LinearLayoutManager(requireContext())
         val myCardView:RecyclerView = root.findViewById(R.id.myCardView)
-        val myCards:List<ServerCard> = test.getMyCard()
-        val adapter = CardAdapter(myCards)
+        var myCards:List<ServerCard> = test.getMyCardPrev()
+        var adapter = CardAdapter(myCards)
         myCardView.adapter = adapter
         myCardView.layoutManager = LinearLayoutManager(requireContext())
 
         val testButton: Button = root.findViewById(R.id.testButton)
         testButton.setOnClickListener {
+            myCards = test.getMyCardAfter()
+            adapter = CardAdapter(myCards)
+            myCardView.adapter = adapter
             val navController=findNavController()
             navController.navigate(R.id.cardDetailFragment)
         }

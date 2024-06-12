@@ -133,7 +133,7 @@ class CreateNewFragment : Fragment() {
                 Style("Arial", 20, "#000000", false, false, false))
             val phone = Elements("phone", showPhone.text.toString(), Position(50, 90),
                 Style("Arial", 20, "#000000", false, false, false))
-            val socialMedia = Elements("socialMedia", "Kobe Bryant", Position(50, 110),
+            val socialMedia = Elements("socialMedia", "GYJ", Position(50, 110),
                 Style("Arial", 20, "#000000", false, false, false))
             val elements : MutableList<Elements> = mutableListOf(name, title, company, email, phone, socialMedia)
             val userId = 1
@@ -158,7 +158,7 @@ class CreateNewFragment : Fragment() {
                 }
             }
             val navController = findNavController()
-            navController.navigate(R.id.createCardFragment)
+            navController.navigate(R.id.createCardFragment2)
         }
 
         backButton.setOnClickListener {

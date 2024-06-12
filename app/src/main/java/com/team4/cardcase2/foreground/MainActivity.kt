@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         }.attach()
 
         val db=openOrCreateDatabase("sqlite.db", MODE_PRIVATE, null)
+        db.execSQL("DROP TABLE  IF EXISTS SQLTable")
         db.execSQL("CREATE TABLE IF NOT EXISTS SQLTable(uid INTEGER, cid INTEGER, gid TEXT)")
         db.close()
     }

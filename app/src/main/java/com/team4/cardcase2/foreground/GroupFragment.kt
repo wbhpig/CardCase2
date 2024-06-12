@@ -164,7 +164,15 @@ class GroupFragment : Fragment() , ButtonClickListener{
     override suspend fun rowClick(id: Int, text: String) {
 
         cardLists = getCards(id, text)
-        cardLists = test.getMyCard()
+        if (id==0){
+            cardLists = test.getMyCard1()
+        }
+        if (id==2){
+            cardLists = test.getMyCard2()
+        }
+        if (id==1){
+            cardLists = test.getMyCard()
+        }
 //        Toast.makeText(context, "QR Code Result: ${getCards(id, text)}", Toast.LENGTH_LONG).show()
         cardAdapter = CardAdapter(cardLists)
 

@@ -1,13 +1,12 @@
 package com.team4.cardcase2.foreground
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import androidx.navigation.Navigation.findNavController
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,17 +14,14 @@ import com.team4.cardcase2.R
 import com.team4.cardcase2.entity.ServerCard
 import com.team4.cardcase2.interfaces.test
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
 /**
  * A simple [Fragment] subclass.
- * Use the [CreateCardFragment.newInstance] factory method to
+ * Use the [CreateCardFragment2.newInstance] factory method to
  * create an instance of this fragment.
  */
-class CreateCardFragment : Fragment() {
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
+class CreateCardFragment2 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -52,7 +48,7 @@ class CreateCardFragment : Fragment() {
         }
 
         val myCardView: RecyclerView = root.findViewById(R.id.myCardView)
-        val myCards:List<ServerCard> = test.getMyCardPrev()
+        val myCards:List<ServerCard> = test.getMyCardAfter()
         val adapter = CardAdapter(myCards)
         myCardView.adapter = adapter
         myCardView.layoutManager = LinearLayoutManager(requireContext())
@@ -78,7 +74,7 @@ class CreateCardFragment : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            CreateCardFragment().apply {
+            CreateCardFragment2().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
@@ -86,6 +82,6 @@ class CreateCardFragment : Fragment() {
             }
         @JvmStatic
         fun newInstance() =
-            CreateCardFragment()
+            CreateCardFragment2()
     }
 }

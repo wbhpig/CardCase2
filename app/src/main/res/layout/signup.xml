@@ -10,23 +10,30 @@
         android:background="#F5F5F5"
         >
 
-        <LinearLayout
-            android:id="@+id/status"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:background="#F2F2F7">
-
-
-        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_height="150dp"
             android:layout_gravity="top">
 
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ion_chevron_back"
+                android:contentDescription="@string/back_button_desc" />
+
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:textSize="28dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/backbutton"
+                android:gravity="top"
+                android:text="Back"
+                android:textColor="#192DE1" />
 
             <ImageView
                 android:layout_width="226dp"
@@ -53,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="25dp"
             android:text="Sign Up"
             android:textColor="@color/black"
@@ -96,7 +103,7 @@
             android:layout_width="360dp"
             android:layout_height="80dp"
             android:orientation="vertical"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal">
             <TextView
                 android:id="@+id/email"
@@ -128,7 +135,7 @@
             android:layout_width="360dp"
             android:layout_height="80dp"
             android:orientation="vertical"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal">
             <TextView
                 android:id="@+id/password"
@@ -160,7 +167,7 @@
             android:layout_width="360dp"
             android:layout_height="80dp"
             android:orientation="vertical"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal">
             <TextView
                 android:id="@+id/confirmpassword"
@@ -195,7 +202,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="28dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="28dp"
             android:background="@drawable/rounded_button"
             android:elevation="4dp"
@@ -210,9 +217,19 @@
             android:layout_height="31dp"
             android:layout_gravity="center_horizontal"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/logInLink1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Already have an account?"
+                android:textColor="#5074E7"
+                android:textSize="15sp"
+                android:contentDescription="@string/already_have_account_desc" />
 
 
             <Button
@@ -224,7 +241,9 @@
                 android:gravity="center_vertical"
                 android:text="Log in"
                 android:textColor="#5074E7"
-                android:textSize="12sp"/>
+                android:textSize="12sp"
+                android:contentDescription="@string/log_in_button_desc"
+                />
 
 
         </LinearLayout>

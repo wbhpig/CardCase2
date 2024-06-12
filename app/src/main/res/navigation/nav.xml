@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_createNewFragment_to_blankFragment"
             app:destination="@id/blankFragment" />
+        <action
+            android:id="@+id/action_createNewFragment_to_createCardFragment2"
+            app:destination="@id/createCardFragment2" />
     </fragment>
     <fragment
         android:id="@+id/blankFragment"
@@ -47,4 +50,9 @@
             android:id="@+id/action_cardDetailFragment_to_blankFragment"
             app:destination="@id/blankFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/createCardFragment2"
+        android:name="com.team4.cardcase2.foreground.CreateCardFragment2"
+        android:label="fragment_create_card2"
+        tools:layout="@layout/fragment_create_card2" />
 </navigation>
