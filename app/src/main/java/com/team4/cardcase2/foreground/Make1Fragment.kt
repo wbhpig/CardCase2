@@ -45,7 +45,7 @@ class Make1Fragment : Fragment() {
         // Inflate the layout for this fragment
         val root = inflater.inflate(R.layout.fragment_make1, container, false)
         val myCardView: RecyclerView = root.findViewById(R.id.myCardView)
-        val myCards:List<ServerCard> = test.getMyCard()
+        val myCards:List<ServerCard> = test.getMyCardAfter()
         val adapter = CardAdapter(myCards)
         myCardView.adapter = adapter
         myCardView.layoutManager = LinearLayoutManager(requireContext())

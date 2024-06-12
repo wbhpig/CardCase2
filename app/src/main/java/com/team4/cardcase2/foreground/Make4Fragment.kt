@@ -43,7 +43,7 @@ class Make4Fragment : Fragment() {
         val next: TextView =root.findViewById(R.id.continuemaking)
         next.setOnClickListener {
             val navigator = findNavController()
-            navigator.navigate(R.id.make2Fragment)
+            navigator.navigate(R.id.make1Fragment)
         }
         return root
     }

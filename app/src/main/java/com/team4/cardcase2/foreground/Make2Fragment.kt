@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.team4.cardcase2.R
@@ -41,11 +42,12 @@ class Make2Fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val root=inflater.inflate(R.layout.fragment_make2, container, false)
-        val next: Button =root.findViewById(R.id.nextMake)
+        val next: ImageButton =root.findViewById(R.id.nextMake)
         next.setOnClickListener {
             val navigator = findNavController()
             navigator.navigate(R.id.make3Fragment)
         }
+//        val back: ImageButton = root.findViewById(R.id.backMake)
         return root
     }
 
