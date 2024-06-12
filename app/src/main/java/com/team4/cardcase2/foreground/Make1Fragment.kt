@@ -50,7 +50,7 @@ class Make1Fragment : Fragment() {
         myCardView.adapter = adapter
         myCardView.layoutManager = LinearLayoutManager(requireContext())
 
-        val testButton: Button = root.findViewById(R.id.testButton2)
+        val testButton: Button = root.findViewById(R.id.gonext)
         testButton.setOnClickListener {
             val navController=findNavController()
             navController.navigate(R.id.make2Fragment)

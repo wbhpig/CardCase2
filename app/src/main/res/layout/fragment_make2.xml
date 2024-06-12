@@ -31,12 +31,14 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/nextMake"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="276dp"
+                android:contentDescription="@string/todo"
                 android:rotation="180"
+                android:background="#F2F2F7"
                 android:src="@drawable/ion_chevron_back"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -53,13 +55,15 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/backmake"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
 
+                android:contentDescription="TODO"
                 android:src="@drawable/ion_chevron_back"
                 app:layout_constraintStart_toStartOf="parent"
+                android:background="#F2F2F7"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -190,8 +194,8 @@
                 android:layout_marginStart="270dp"
                 android:layout_marginTop="36dp"
                 android:gravity="center"
-                android:textColor="#0162DD"
                 android:text="Payment"
+                android:textColor="#0162DD"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -201,9 +205,9 @@
                 android:layout_height="18dp"
                 android:layout_marginStart="139dp"
                 android:layout_marginTop="36dp"
-                android:textColor="#0162DD"
                 android:gravity="center"
                 android:text="Details"
+                android:textColor="#0162DD"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -213,9 +217,27 @@
                 android:layout_height="18dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="36dp"
-                android:textColor="#0162DD"
                 android:gravity="center"
                 android:text="Choose"
+                android:textColor="#0162DD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="289dp"
+                android:src="@drawable/whitecircle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="158dp"
+                android:src="@drawable/circlewhiteblue"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

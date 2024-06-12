@@ -7,17 +7,18 @@
     android:id="@+id/nameFragment"
     tools:context=".foreground.NameFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="#F2F2F7">
 
 
-        <ImageView
+        <ImageButton
             android:id="@+id/backLast"
             android:layout_width="38dp"
             android:layout_height="37dp"
+            android:background="#F2F2F7"
             android:layout_marginStart="8dp"
             android:layout_marginTop="52dp"
             android:src="@drawable/ion_chevron_back"
@@ -50,7 +51,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="100dp"
@@ -59,12 +60,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/clear"
                 android:layout_width="21dp"
                 android:layout_height="21dp"
                 android:layout_marginStart="332dp"
                 android:layout_marginTop="13dp"
+                android:background="#FFFFFF"
                 android:src="@drawable/x_circle_contained"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -80,6 +82,6 @@
                 android:inputType="text"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-        </LinearLayout>
-    </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -54,5 +54,13 @@
         android:id="@+id/createCardFragment2"
         android:name="com.team4.cardcase2.foreground.CreateCardFragment2"
         android:label="fragment_create_card2"
-        tools:layout="@layout/fragment_create_card2" />
+        tools:layout="@layout/fragment_create_card2" >
+        <action
+            android:id="@+id/action_createCardFragment2_to_blankFragment2"
+            app:destination="@id/blankFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.team4.cardcase2.foreground.BlankFragment2"
+        android:label="BlankFragment2" />
 </navigation>

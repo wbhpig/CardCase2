@@ -40,9 +40,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/backLast"
             android:layout_width="38dp"
+            android:background="#F2F2F7"
             android:layout_height="37dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="52dp"
@@ -63,10 +64,11 @@
                 android:layout_height="48dp"
                 android:background="#FFFFFF">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/check1"
                     android:layout_width="21dp"
                     android:layout_height="21dp"
+                    android:background="#FFFFFF"
                     android:layout_marginStart="340dp"
                     android:layout_marginTop="14dp"
                     android:src="@drawable/check_01"
@@ -92,10 +94,11 @@
                 android:layout_height="48dp"
                 android:background="#FFFFFF">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/check2"
                     android:layout_width="21dp"
                     android:layout_height="21dp"
+                    android:background="#FFFFFF"
                     android:layout_marginStart="340dp"
                     android:layout_marginTop="14dp"
                     android:src="@drawable/check_01"
@@ -120,9 +123,10 @@
                 android:layout_height="48dp"
                 android:background="#FFFFFF">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/check3"
                     android:layout_width="21dp"
+                    android:background="#FFFFFF"
                     android:layout_height="21dp"
                     android:layout_marginStart="340dp"
                     android:layout_marginTop="14dp"
@@ -148,10 +152,11 @@
                 android:layout_height="48dp"
                 android:background="#FFFFFF">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/check4"
                     android:layout_width="21dp"
                     android:layout_height="21dp"
+                    android:background="#FFFFFF"
                     android:layout_marginStart="340dp"
                     android:layout_marginTop="14dp"
                     android:src="@drawable/check_01"
@@ -176,10 +181,11 @@
                 android:layout_height="48dp"
                 android:background="#FFFFFF">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/check5"
                     android:layout_width="21dp"
                     android:layout_height="21dp"
+                    android:background="#FFFFFF"
                     android:layout_marginStart="340dp"
                     android:layout_marginTop="14dp"
                     android:src="@drawable/check_01"

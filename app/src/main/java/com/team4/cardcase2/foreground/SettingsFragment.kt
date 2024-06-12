@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
@@ -43,7 +44,7 @@ class SettingsFragment : Fragment() {
         // Inflate the layout for this fragment
         val root =  inflater.inflate(R.layout.fragment_settings, container, false)
 
-        val button: Button = root.findViewById(R.id.imageView9)
+        val button: ImageButton = root.findViewById(R.id.imageView9)
         button.setOnClickListener {
             val navigator = findNavController()
             navigator.navigate(R.id.infoFragment)

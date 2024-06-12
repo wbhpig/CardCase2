@@ -56,7 +56,7 @@ class CreateCardFragment2 : Fragment() {
         val backButton: TextView = root.findViewById(R.id.backButton2)
         backButton.setOnClickListener {
             val navController = findNavController()
-            navController.navigate(R.id.blankFragment)
+            navController.navigate(R.id.blankFragment2)
         }
 
         return root

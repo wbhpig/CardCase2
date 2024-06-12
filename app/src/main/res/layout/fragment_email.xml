@@ -26,9 +26,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/backLast"
             android:layout_width="38dp"
+            android:background="#F2F2F7"
             android:layout_height="37dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="52dp"
@@ -68,9 +69,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imageView16"
                 android:layout_width="21dp"
+                android:background="#FFFFFF"
                 android:layout_height="21dp"
                 android:layout_marginStart="332dp"
                 android:layout_marginTop="14dp"

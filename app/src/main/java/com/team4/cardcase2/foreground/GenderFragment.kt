@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.navigation.fragment.findNavController
@@ -104,7 +105,7 @@ class GenderFragment : Fragment() {
             check5.visibility = View.GONE
         }
 
-        val back: Button =view.findViewById(R.id.backLast)
+        val back: ImageButton =view.findViewById(R.id.backLast)
         val goInfo2:Button=view.findViewById(R.id.gonext)
         back.setOnClickListener {
             val navigator = findNavController()

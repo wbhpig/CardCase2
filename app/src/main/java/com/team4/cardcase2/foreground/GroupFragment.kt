@@ -42,6 +42,7 @@ class GroupFragment : Fragment() , ButtonClickListener{
     private lateinit var groupAdapter:GroupAdapter
     private lateinit var cardAdapter: CardAdapter
     private var cardLists: MutableList<ServerCard> = mutableListOf()
+    private lateinit var cardView: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,10 +71,8 @@ class GroupFragment : Fragment() , ButtonClickListener{
             showInputDialog()
         }
 
-        val cardView: RecyclerView = root.findViewById(R.id.cardView)
-//        getCards(1, "1")
-        cardLists = test.getMyCard()
-//        Toast.makeText(context, "Response: $cardLists", Toast.LENGTH_SHORT).show()
+        cardView = root.findViewById(R.id.cardView)
+        cardLists = test.getMyCard1()
         cardAdapter = CardAdapter(cardLists)
         cardView.adapter = cardAdapter
         cardView.layoutManager = LinearLayoutManager(requireContext())
@@ -162,10 +161,12 @@ class GroupFragment : Fragment() , ButtonClickListener{
     }
 
     override suspend fun rowClick(id: Int, text: String) {
+        println(text)
 
         cardLists = getCards(id, text)
         if (id==0){
             cardLists = test.getMyCard1()
+            println(cardLists)
         }
         if (id==2){
             cardLists = test.getMyCard2()
@@ -175,6 +176,8 @@ class GroupFragment : Fragment() , ButtonClickListener{
         }
 //        Toast.makeText(context, "QR Code Result: ${getCards(id, text)}", Toast.LENGTH_LONG).show()
         cardAdapter = CardAdapter(cardLists)
+        cardView.adapter = cardAdapter
+        cardView.layoutManager = LinearLayoutManager(requireContext())
 
 
     }

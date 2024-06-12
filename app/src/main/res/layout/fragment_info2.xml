@@ -124,10 +124,11 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/goGender"
                     android:layout_width="27dp"
                     android:layout_height="27dp"
+                    android:background="#F2F2F7"
                     android:layout_marginStart="329dp"
                     android:layout_marginTop="13dp"
                     android:src="@drawable/chevron_right"

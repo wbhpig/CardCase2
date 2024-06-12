@@ -131,7 +131,7 @@ public class test {
                 "    \"elements\": [\n" +
                 "        {\n" +
                 "            \"type\": \"name\",\n" +
-                "            \"content\": \"Li Tiansuo\",\n" +
+                "            \"content\": \"Long Teng\",\n" +
                 "            \"position\": {\n" +
                 "                \"x\": 50,\n" +
                 "                \"y\": 10\n" +
@@ -163,7 +163,7 @@ public class test {
                 "        },\n" +
                 "        {\n" +
                 "            \"type\": \"company\",\n" +
-                "            \"content\": \"Company\",\n" +
+                "            \"content\": \"BIT\",\n" +
                 "            \"position\": {\n" +
                 "                \"x\": 50,\n" +
                 "                \"y\": 50\n" +
@@ -179,7 +179,7 @@ public class test {
                 "        },\n" +
                 "        {\n" +
                 "            \"type\": \"email\",\n" +
-                "            \"content\": \"1919@810.com\",\n" +
+                "            \"content\": \"tenglong@bit.edu.cn\",\n" +
                 "            \"position\": {\n" +
                 "                \"x\": 50,\n" +
                 "                \"y\": 70\n" +
@@ -195,7 +195,7 @@ public class test {
                 "        },\n" +
                 "        {\n" +
                 "            \"type\": \"phone\",\n" +
-                "            \"content\": \"114514\",\n" +
+                "            \"content\": \"68918265\",\n" +
                 "            \"position\": {\n" +
                 "                \"x\": 50,\n" +
                 "                \"y\": 90\n" +
@@ -211,7 +211,7 @@ public class test {
                 "        },\n" +
                 "        {\n" +
                 "            \"type\": \"socialMedia\",\n" +
-                "            \"content\": \"Kobe Bryant\",\n" +
+                "            \"content\": \"100081\",\n" +
                 "            \"position\": {\n" +
                 "                \"x\": 50,\n" +
                 "                \"y\": 110\n" +

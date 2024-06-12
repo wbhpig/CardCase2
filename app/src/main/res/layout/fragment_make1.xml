@@ -1,28 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".foreground.Make1Fragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/myCardView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_marginTop="188dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        </androidx.recyclerview.widget.RecyclerView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/myCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/testButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            </androidx.recyclerview.widget.RecyclerView>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/gonext"
+                style="@style/MyButtonStyle"
+                android:layout_width="181dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/rounded_button"
+                android:text="Save"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="351dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="124dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="73dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:text="Payment"
+                android:textColor="#0162DD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="73dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="139dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:text="Details"
+                android:textColor="#0162DD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="73dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:text="Choose"
+                android:textColor="#0162DD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="289dp"
+                android:src="@drawable/whitecircle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="158dp"
+                android:src="@drawable/whitecircle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="27dp"
+                android:src="@drawable/circlewhiteblue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

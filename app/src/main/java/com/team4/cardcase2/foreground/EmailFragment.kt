@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.team4.cardcase2.R
@@ -39,7 +40,7 @@ class EmailFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val root= inflater.inflate(R.layout.fragment_email, container, false)
-        val back: Button =root.findViewById(R.id.backLast)
+        val back: ImageButton =root.findViewById(R.id.backLast)
         val goInfo1: Button =root.findViewById(R.id.gonext)
         back.setOnClickListener {
             val navigator = findNavController()

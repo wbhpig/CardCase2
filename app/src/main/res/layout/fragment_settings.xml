@@ -235,7 +235,7 @@
                 android:layout_width="29dp"
                 android:layout_height="29dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/eye_open" />
+                android:src="@drawable/shield_plus" />
         </RelativeLayout>
 
         <TextView
@@ -432,12 +432,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/imageView9"
         android:layout_width="36dp"
         android:layout_height="36dp"
         android:layout_marginStart="311dp"
         android:layout_marginTop="185dp"
+        android:background="#FFFFFF"
         android:src="@drawable/chevron_right"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

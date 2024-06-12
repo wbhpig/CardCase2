@@ -207,7 +207,7 @@ class CreateNewFragment : Fragment() {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 // Update showName with the current text in inputFirstName and inputSecondName
-                val company = inputFirstName.text.toString()
+                val company = inputCompany.text.toString()
                 showCompany.text = "$company"
             }
 

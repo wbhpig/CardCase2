@@ -28,10 +28,11 @@
 
             <Button
                 android:id="@+id/back"
-                android:layout_width="70dp"
+                android:layout_width="170dp"
                 android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@id/backbutton"
+                android:background="#F2F2F7"
                 android:gravity="top"
                 android:text="Back"
                 android:textColor="#192DE1"
